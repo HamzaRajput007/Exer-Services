@@ -1,0 +1,4 @@
+include ':app'
+//, ':autoimageslider'
+//include ':libs:ViewPagerIndicator-Library'
+

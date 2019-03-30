@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="8.0dip"
+        android:text="Log In"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#ffffffff"
+        android:textSize="18.0sp" />
+
+    <View
+        android:id="@+id/view19"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" />
+
+    <!--<com.facebook.login.widget.LoginButton-->
+        <!--android:id="@id/login_button"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_margin="10.0dip" />-->
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="We never post to Facebook without your permission. We hate that too."
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#ffffffff" />
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/view13"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+
+        <View
+            android:id="@+id/divider13"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="#ffffffff" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:text="OR"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#ffffffff" />
+
+        <View
+            android:id="@+id/divider17"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="#ffffffff" />
+
+        <View
+            android:id="@+id/view14"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view15"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" />
+
+    <EditText
+        android:id="@+id/le_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/background_topround"
+        android:cursorVisible="true"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="5.0dip"
+        android:hint="Email"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/le_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/background_bottomround"
+        android:cursorVisible="true"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="5.0dip"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:background="@drawable/yellow_background"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/txt_reg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center"
+        android:text="Not Registered?"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:id="@+id/forgetpassword_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center"
+        android:padding="5.0dip"
+        android:text="Forget Password"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#ffffffff" />
+
+    <View
+        android:id="@+id/view16"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" />
+
+    <View
+        android:id="@+id/view17"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" />
+
+    <View
+        android:id="@+id/view18"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" />
+</LinearLayout>

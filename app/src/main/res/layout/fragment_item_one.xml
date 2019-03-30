@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="7.0dip">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/searchbarbackground">
+
+            <TextView
+                android:id="@id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_search_top"
+                android:gravity="center"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:text="Search Category, Place or Merchant"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="#ffcacaca"
+                android:textSize="12.0sp" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffffff">
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="wrap_content"
+                android:layout_height="150.0dip"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="200.0dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="5.0dip">
+
+                    <!--<android.support.v4.view.ViewPager-->
+                    <!--android:id="@+id/pager"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentStart="true" />-->
+
+                    <!--<com.smarteist.autoimageslider.SliderLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:id="@+id/imageSlider"/>-->
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/entertainment"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2.0dip"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/orange_border"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="20.0dip"
+                                    android:layout_height="20.0dip"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10.0dip"
+                                    android:background="@drawable/steering" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2.0dip"
+                                    android:gravity="center"
+                                    android:lines="2"
+                                    android:text="Entertainment"
+                                    android:textColor="@color/black"
+                                    android:textSize="11.0sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/food"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2.0dip"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/red_border"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="20.0dip"
+                                    android:layout_height="20.0dip"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10.0dip"
+                                    android:background="@drawable/glass" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2.0dip"
+                                    android:gravity="center"
+                                    android:lines="2"
+                                    android:text="@string/food_drinks"
+                                    android:textColor="@color/black"
+                                    android:textSize="11.0sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/beauty"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2.0dip"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/green_border"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="20.0dip"
+                                    android:layout_height="20.0dip"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10.0dip"
+                                    android:background="@drawable/heart" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2.0dip"
+                                    android:gravity="center"
+                                    android:lines="2"
+                                    android:text="Beauty &amp; Wellness"
+                                    android:textColor="@color/black"
+                                    android:textSize="11.0sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/hotels"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2.0dip"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/brown_border"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="20.0dip"
+                                    android:layout_height="20.0dip"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10.0dip"
+                                    android:background="@drawable/hotel" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="2.0dip"
+                                    android:gravity="center"
+                                    android:lines="2"
+                                    android:text="Travel &amp; Hotels"
+                                    android:textColor="@color/black"
+                                    android:textSize="11.0sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/retail"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2.0dip"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/blue_border"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="20.0dip"
+                                    android:layout_height="20.0dip"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10.0dip"
+                                    android:background="@drawable/shopping_bag" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="2.0dip"
+                                    android:gravity="center"
+                                    android:lines="2"
+                                    android:text="Retail &amp; Services"
+                                    android:textColor="@color/black"
+                                    android:textSize="11.0sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/web"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2.0dip"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/skyblu_border"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="20.0dip"
+                                    android:layout_height="20.0dip"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10.0dip"
+                                    android:background="@drawable/world_wide_web" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_margin="2.0dip"
+                                    android:gravity="center"
+                                    android:lines="2"
+                                    android:text="Web Deals"
+                                    android:textColor="@color/black"
+                                    android:textSize="11.0sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/onlinefood"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10.0dip"
+                                android:layout_weight="1.0"
+                                android:text="Food Outlets Near You "
+                                android:textAppearance="@style/TextAppearance.AppCompat"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvSee3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10.0dip"
+                                android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+                                android:text="See All"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12.0sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <HorizontalScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@id/onlinefood"
+                            android:layout_marginBottom="5.0dip"
+                            android:layout_marginTop="0.0dip">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/recyclerview_neardeals"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent" />
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/recom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10.0dip"
+                                android:layout_weight="1.0"
+                                android:text="Premium Deals From "
+                                android:textAppearance="@style/TextAppearance.AppCompat"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvSeeAll"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@+id/hor"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_margin="10.0dip"
+                                android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+                                android:text="See All"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12.0sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <HorizontalScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@id/recom"
+                            android:layout_marginBottom="5.0dip">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/recyclerview_permdeals"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent" />
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        <LinearLayout
+                            android:id="@+id/hotbrandstext"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/onlineHor"
+                                android:layout_margin="10.0dip"
+                                android:layout_weight="1.0"
+                                android:text="Hot Brands "
+                                android:textAppearance="@style/TextAppearance.AppCompat"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10.0dip"
+                                android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+                                android:text="See All"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12.0sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <ScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/cuisines"
+                            android:layout_marginBottom="5.0dip"
+                            android:layout_marginTop="5.0dip">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/recyclerview_hotdeals"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginBottom="5.0dip"
+                                    android:padding="5.0dip" />
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/restaurant"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/cuiHor"
+                                android:layout_margin="10.0dip"
+                                android:layout_weight="1.0"
+                                android:text="New on Exer"
+                                android:textAppearance="@style/TextAppearance.AppCompat"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvSee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10.0dip"
+                                android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+                                android:text="See All"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12.0sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <HorizontalScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:padding="5.0dip">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:orientation="horizontal">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/recyclerview_newshops"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent" />
+
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

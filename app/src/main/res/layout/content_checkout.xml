@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20.0dip"
+            android:text="Almost there !"
+            android:textAlignment="center"
+            android:textColor="#ff000000"
+            android:textSize="18.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/showScreen_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Show this screen to"
+            android:textAlignment="center"
+            android:textSize="18.0sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:orientation="horizontal"
+            android:padding="10.0dip">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <EditText
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#ffffffff" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <EditText
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#ffffffff" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <EditText
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#ffffffff"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <EditText
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#ffffffff" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="#ffffffff"
+                android:hint="Enter Total Bill Amount"
+                android:padding="5.0dip" />
+
+            <Button
+                android:id="@id/button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50.0dip"
+                android:layout_marginRight="50.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@color/blue"
+                android:padding="10.0dip"
+                android:text="OK"
+                android:textColor="#ffffffff" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50.0dip"
+                android:layout_marginRight="50.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@android:color/holo_red_dark"
+                android:text="Report Issue"
+                android:textColor="#ffffffff" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

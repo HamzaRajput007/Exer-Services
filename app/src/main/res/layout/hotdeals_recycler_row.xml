@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="5.0dip"
+    android:layout_marginLeft="10.0dip"
+    android:layout_marginRight="10.0dip"
+    android:layout_marginTop="5.0dip"
+    app:cardCornerRadius="5.0dip"
+    app:cardElevation="3.0dip">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/hotdeal_image"
+            android:layout_width="90.0dip"
+            android:layout_height="60.0dip"
+            android:layout_gravity="center"
+            android:layout_margin="10.0dip"
+            android:background="@drawable/red_border"
+            android:src="@drawable/chik" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5.0dip">
+
+            <TextView
+                android:id="@+id/hotdeal_heading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Chicken hut"
+                android:textColor="@color/black"
+                android:textSize="15.0dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hotdeal_subheading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Subs, panini, Drinks etc" />
+
+            <TextView
+                android:id="@+id/hotdeal_discount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/orange"
+                android:textSize="16.0sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

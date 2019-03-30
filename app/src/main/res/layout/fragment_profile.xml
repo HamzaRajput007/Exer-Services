@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/view9"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@+id/profile_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5.0dip"
+            android:text="User"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:padding="5.0dip">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="25.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                app:srcCompat="@drawable/ic_settings" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<android.support.design.widget.CoordinatorLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="120.0dip">-->
+
+            <!--<ir.beigirad.zigzagview.ZigzagView-->
+            <!--android:id="@+id/zigzagv"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="80.0dip"-->
+            <!--app:zigzagBackgroundColor="@color/colorPrimary"-->
+            <!--app:zigzagHeight="7.0dip"-->
+            <!--app:zigzagSides="bottom" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imageView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:layout_anchor="@+id/zigzagv"-->
+            <!--app:layout_anchorGravity="bottom|center"-->
+            <!--app:srcCompat="@mipmap/ic_launcher_round" />-->
+            <!--</android.support.design.widget.CoordinatorLayout>-->
+
+            <!--Dummy IMage FOR TEST-->
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/burger"
+                app:layout_anchor="@+id/zigzagv" />
+            <!--End Dummy IMage FOR TEST-->
+
+            <LinearLayout
+                android:id="@+id/linar"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="bottom|center"
+                android:baselineAligned="true"
+                android:clipToPadding="true"
+                android:layerType="software"
+                android:layoutMode="clipBounds"
+                android:orientation="vertical"
+                android:paddingBottom="5.0dip"
+                android:paddingTop="5.0dip"
+                app:layout_anchor="@id/imageView"
+                app:layout_anchorGravity="bottom|center"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <TextView
+                    android:id="@+id/profile_tv_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:text="umairsajid0017@yahoo.com"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="18.0sp" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#ffffffff"
+                    android:orientation="vertical"
+                    android:paddingBottom="5.0dip"
+                    android:paddingTop="5.0dip">
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Greate, You've Saved"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ADE 0"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="#ffffb300"
+                        android:textSize="30.0sp" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Keep on Saving"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginBottom="20.0dip"
+                    android:background="@android:color/darker_gray" />
+
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <View
+                            android:id="@+id/divider15"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0dip"
+                            android:background="@android:color/darker_gray" />
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffffff"
+                            android:drawableLeft="@drawable/ic_messeges"
+                            android:drawablePadding="5.0dip"
+                            android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+                            android:gravity="center_vertical"
+                            android:padding="6.0dip"
+                            android:text="Messeges"
+                            android:textAppearance="@style/TextAppearance.AppCompat"
+                            android:textSize="18.0sp" />
+
+                        <View
+                            android:id="@+id/divider16"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0dip"
+                            android:background="@android:color/darker_gray" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffffff"
+                            android:drawableLeft="@drawable/ic_redeem"
+                            android:drawablePadding="5.0dip"
+                            android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+                            android:gravity="center_vertical"
+                            android:padding="6.0dip"
+                            android:text="Redeem History"
+                            android:textAppearance="@style/TextAppearance.AppCompat"
+                            android:textSize="18.0sp" />
+
+                        <View
+                            android:id="@+id/divider14"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0dip"
+                            android:layout_marginBottom="10.0dip"
+                            android:background="@android:color/darker_gray" />
+
+                        <View
+                            android:id="@+id/divider12"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0dip"
+                            android:layout_marginTop="10.0dip"
+                            android:background="@android:color/darker_gray" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffffff"
+                            android:drawableLeft="@drawable/ic_recommemd"
+                            android:drawablePadding="5.0dip"
+                            android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+                            android:gravity="center_vertical"
+                            android:padding="6.0dip"
+                            android:text="Recommend a Marchant"
+                            android:textAppearance="@style/TextAppearance.AppCompat"
+                            android:textSize="18.0sp" />
+
+                        <View
+                            android:id="@+id/divider9"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0dip"
+                            android:background="@android:color/darker_gray" />
+
+                        <TextView
+                            android:id="@+id/share_btn_pro"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffffff"
+                            android:drawableLeft="@drawable/ic_share_purple"
+                            android:drawablePadding="5.0dip"
+                            android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+                            android:gravity="center_vertical"
+                            android:padding="6.0dip"
+                            android:text="Share with Friends"
+                            android:textAppearance="@style/TextAppearance.AppCompat"
+                            android:textSize="18.0sp" />
+
+                        <View
+                            android:id="@+id/divider10"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0dip"
+                            android:background="@android:color/darker_gray" />
+
+                        <TextView
+                            android:id="@+id/feedback_btn_pro"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffffff"
+                            android:drawableLeft="@drawable/ic_feedback"
+                            android:drawablePadding="5.0dip"
+                            android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+                            android:gravity="center_vertical"
+                            android:padding="6.0dip"
+                            android:text="Send us Feedback"
+                            android:textAppearance="@style/TextAppearance.AppCompat"
+                            android:textSize="18.0sp" />
+
+                        <View
+                            android:id="@+id/divider7"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0dip"
+                            android:background="@android:color/darker_gray" />
+
+                        <TextView
+                            android:id="@+id/rate_btn_pro"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffffff"
+                            android:drawableLeft="@drawable/ic_star"
+                            android:drawablePadding="5.0dip"
+                            android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+                            android:gravity="center_vertical"
+                            android:padding="6.0dip"
+                            android:text="Rate Exer App"
+                            android:textAppearance="@style/TextAppearance.AppCompat"
+                            android:textSize="18.0sp" />
+
+                        <View
+                            android:id="@+id/divider8"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0dip"
+                            android:background="@android:color/darker_gray" />
+
+                        <TextView
+                            android:id="@+id/logout_btn_pro"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffffff"
+                            android:drawableLeft="@drawable/ic_logout"
+                            android:drawablePadding="5.0dip"
+                            android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+                            android:gravity="center_vertical"
+                            android:padding="6.0dip"
+                            android:text="Logout"
+                            android:textAppearance="@style/TextAppearance.AppCompat"
+                            android:textSize="18.0sp" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0dip"
+                            android:background="@android:color/darker_gray" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

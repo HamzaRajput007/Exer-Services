@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10.0dip"
+    app:cardCornerRadius="2.0dip"
+    app:cardElevation="2.0dip">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/deals_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:padding="10.0dip"
+                android:text="Deal1"
+                android:textColor="#ff000000"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/share_deals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5.0dip"
+                app:srcCompat="@drawable/ic_menu_share"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/fav_deals"
+                android:layout_width="35.0dip"
+                android:layout_height="35.0dip"
+                android:padding="5.0dip"
+                app:srcCompat="@drawable/ic_n_favorite_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/deals_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Enjoy" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/deals_descounted_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 999"
+                    android:textColor="@color/red"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/deals_originalPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:paddingLeft="10.0dip"
+                    android:text="Rs. 1346" />
+
+                <TextView
+                    android:id="@+id/minus_quantity"
+                    android:layout_width="25.0dip"
+                    android:layout_height="25.0dip"
+                    android:background="@color/blue"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/quantity_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:padding="10.0dip"
+                    android:text="00"
+                    android:textColor="@color/red"
+                    android:textSize="18.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/plus_quantity"
+                    android:layout_width="25.0dip"
+                    android:layout_height="25.0dip"
+                    android:background="@color/red"
+                    android:text="+"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="18.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
